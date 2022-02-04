@@ -17,7 +17,6 @@ jobs:
             apk add git
             sh .git-hook
             apk add make
-            make -j $(nproc)
 
       - name: make zip
         run: ./package.py

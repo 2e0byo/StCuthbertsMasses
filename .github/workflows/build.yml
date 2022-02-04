@@ -17,6 +17,7 @@ jobs:
             apk add git
             sh .git-hook
             apk add make
+            apk add gregorio
 
       - uses: actions/setup-node@v2
         with:

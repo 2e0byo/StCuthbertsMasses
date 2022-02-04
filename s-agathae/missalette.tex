@@ -112,7 +112,7 @@
   #2\par\switchcolumn*}
 \renewcommand{\S}{\emph{S.}~}
 \newcommand{\M}{\emph{M.}~}
-\newcommand{\amen}{\l{Amen.}\e{Amen.}}
+\newcommand{\amen}{\l{\r~Amen.}\e{\r~Amen.}}
 \newcommand{\dominusvobiscum}{%
   \l[s]{Dóminus vobíscum.}
   \e[s]{The Lord be with you.}
@@ -175,97 +175,132 @@
 % title page
 \TitlePage{Sacra Missa}{\masstype}{\feast}
 
-\section{Introit}
+% \frontmatter
+
+~\par
+
+\vfill
+
+{\small
+  This booklet contains the propers of the Mass, and the ordinary, as sung by
+  the choir.  So as not to be excessively long it omits the rest of the Mass and
+  is designed to complement, rather than to replace, a Missal.  If you are used
+  to the \emph{usus antiquior} of the Roman Rite, the Dominican Rite will seem
+  very familiar to you.  If you are used to one of the Eastern Rites, its
+  brevity and at times stark simplicity may seem strange, but the same
+  underlying form is discernible.  It is perhaps to those accustomed to the
+  \emph{usus recentior} of the Roman Rite (the \emph{Novus Ordo Missæ}) that
+  things will seem strangest: where is the familiar dialogue?  What is the
+  congregation to \emph{do}?
+
+  Many things: but perhaps above all to contemplate, to participate actively in
+  the sacrifice offered by the priest---by the Church---by Christ---as, in the
+  Church's liturgy, the earthly order is sanctified and drawn up into the
+  heavenly order; and indeed to participate in song, for the whole congregation
+  is invited to join with the choir in singing the response and the ordinary.
+
+  If you are not familiar with Mass in this form, it is perhaps better to put
+  use this booklet lightly, and to allow the form and splendour of the liturgy
+  to be its own explanation, at least at first.
+
+  As required by the liturgical law of the Church, communion will be given on
+  the tongue, kneeling where possible.
+}
+
+\clearpage
+% \mainmatter
+
+\subsection{Introit}
 \red{When the celebrant reaches the altar:}
 \gregorioscore{intr.gtex}
 \onecolumntranslation{\introittranslation}
 
-\section{Kyrie}
+\subsection{Kyrie}
 \red{Immediately after the Introit:}
 \gregorioscore{../masses/\kyrie/kyrie.gtex}
 
 \ifdefempty{\gloria}{}{%
-\section{Gloria}
+\subsection{Gloria}
 \red{Immediately after the Kyrie:}
 \gregorioscore{../masses/\gloria/gloria.gtex}
 }
 
-\section{Collect}
+\subsection{Collect}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 \black{\collect}
 \gregorioscore{../common/amen.gtex}
 
-\section{Lesson}
+\subsection{Lesson}
 \red{The lesson is chanted:}
 \black{\lesson}
 
-\section{Responsory}
+\subsection{Responsory}
 \red{After the Chanting of the Epistle, or during the (secret) reading if
 so appointed:}
 \gregorioscore{resp.gtex}
 \gregorioscore{alleluia.gtex}
 \onecolumntranslation{\responsorytranslation}
 
-\section{Gospel}
+\subsection{Gospel}
 \red{The choir sings the responses at the Holy Gospel:}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 \gregorioscore{../common/sequenti.gtex}
 \black{\gospel}
 
-\section{Response prior to the Offertory}
+\subsection{Response prior to the Offertory}
 \red{Just before the chanting of the Offertory:}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 
-\section{Offertory}
+\subsection{Offertory}
 \red{Immediately after the Celebrant chants the previous “Oremus”:}
 \gregorioscore{offert.gtex}
 \onecolumntranslation{\offertorytranslation}
 
 \red{A motet or hymn may be sung here.}
 
-\section{Responses at the Preface}
+\subsection{Responses at the Preface}
 \gregorioscore{../common/pref.gtex}
 
-\section{Sanctus and Benedictus}
+\subsection{Sanctus and Benedictus}
 \red{Immediately after the Celebrant concludes the chanting of the Preface:}
 \gregorioscore{../masses/\sanctus/sanctus.gtex}
 
-\section{Amen at the end of the Canon of the Mass}
+\subsection{Amen at the end of the Canon of the Mass}
 \gregorioscore{../common/amen.gtex}
 
-\section{Pater Noster}
+\subsection{Pater Noster}
 \red{The Celebrant alone chants the “Pater Noster.” The Choir sings the conclusion:}
 \gregorioscore{../common/sed.gtex}
 
-\section{Breaking of the Host}
+\subsection{Breaking of the Host}
 \gregorioscore{../common/amen.gtex}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 
 
-\section{Agnus Dei}
+\subsection{Agnus Dei}
 \red{After the proceeding ``Et cum spiritu tuo:''}
 \gregorioscore{../common/amen.gtex}
 \gregorioscore{../common/pax_domini.gtex}
 \gregorioscore{../masses/\agnus/agnus.gtex}
 
-\subsubsection{Communion}
+\subsection{Communion}
 \red{Once the Celebrant begins to distribute Holy Communion:}
 \gregorioscore{communio.gtex}
 \onecolumntranslation{\communiontranslation}
 
 \red{A motet or hymn may be sung here.}
 
-\subsubsection{Post-Communion Collect}
+\subsection{Post-Communion Collect}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 \black{\postcommunion}
 \gregorioscore{../common/amen.gtex}
 
-\subsubsection{Dismissal}
+\subsection{Dismissal}
 \gregorioscore{../common/dominus_vobiscum.gtex}
 \gregorioscore{../masses/vi/ite.gtex}
 
 \ifdefempty{\marian}{}{%
-\section{Marian Antiphon}
+\subsection{Marian Antiphon}
 \red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
 \gregorioscore{marian.gtex}
 \red{A motet or hymn may follow.}

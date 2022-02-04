@@ -1,0 +1,16 @@
+{
+  "name": "StCuthbertsMasses",
+  "version": "1.0.0",
+  "description": "Dominican rite masses as at St. Cuthbert's Durham",
+  "main": "index.js",
+  "repository": "git://github.com/2e0byo/StcuthbertsMasses",
+  "author": "John Maximilian <2e0byo@gmail.com>",
+  "license": "CC0",
+  "private": true,
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^9.0.1",
+    "semantic-release": "^18.0.0"
+  }
+}

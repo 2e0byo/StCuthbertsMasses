@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 make -j $(nproc)
-python scripts/package.py
+python3 scripts/package.py

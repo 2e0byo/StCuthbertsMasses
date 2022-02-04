@@ -18,10 +18,10 @@ offert.gtex:
 communio.gtex:
 	gregorio communio.gabc
 
-# marian.gtex:
-# 	gregorio marian.gabc
+marian.gtex:
+	gregorio marian.gabc
 
-gabc: intr.gtex resp.gtex alleluia.gtex offert.gtex communio.gtex
+gabc: intr.gtex resp.gtex alleluia.gtex offert.gtex communio.gtex marian.gtex
 
 test: gabc
 	echo "Test mode doesn't work."

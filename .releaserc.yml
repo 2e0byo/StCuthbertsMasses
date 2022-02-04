@@ -3,7 +3,7 @@ plugins:
   - "@semantic-release/release-notes-generator"
   - "@semantic-release/changelog"
   - "@semantic-release/exec":
-      - "publishCmd": "make -j $(nproc)"
+      - "publishCmd": "scripts/build.sh"
   - "@semantic-release/git"
   -
     - "@semantic-release/github"

@@ -5,6 +5,13 @@
 
 * add S. Agathae. ([d6e3efe](https://github.com/2e0byo/StcuthbertsMasses/commit/d6e3efe7782a0eb6f3e7d07d8dd71cfb9af5cc26))
 
+# [1.1.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.0.0...v1.1.0) (2022-02-04)
+
+
+### Features
+
+* add S. Agathae. ([d6e3efe](https://github.com/2e0byo/StcuthbertsMasses/commit/d6e3efe7782a0eb6f3e7d07d8dd71cfb9af5cc26))
+
 # 1.0.0 (2022-02-04)
 
 

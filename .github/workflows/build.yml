@@ -11,22 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: 'yarn'
+      - run: yarn install
       - uses: xu-cheng/texlive-action/full@v1
         with:
           run: |
             apk add git
             sh .git-hook
             apk add make
-            apk add gregorio
-
-      - uses: actions/setup-node@v2
-        with:
-          cache: 'yarn'
-      - run: yarn install
-      - name: Semantic Release
-        run: yarn semantic-release
+            yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       - uses: actions/upload-artifact@v2
         with:

@@ -4,6 +4,19 @@
 ### Bug Fixes
 
 * graphical fixups and add marian. ([f21fff8](https://github.com/2e0byo/StcuthbertsMasses/commit/f21fff81e68bfd3ac6789ece24decca20e20115f))
+* **s-agathae:** add marian antiphon. ([4c25347](https://github.com/2e0byo/StcuthbertsMasses/commit/4c253473977ca54b8fe419963c8c700646584ecd))
+
+
+### Features
+
+* **s-agathae:** minor fixups. ([b68c402](https://github.com/2e0byo/StcuthbertsMasses/commit/b68c4027c131d23b7f2ce029a503b47258efc3e4))
+
+# [1.2.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.1.0...v1.2.0) (2022-02-04)
+
+
+### Bug Fixes
+
+* graphical fixups and add marian. ([f21fff8](https://github.com/2e0byo/StcuthbertsMasses/commit/f21fff81e68bfd3ac6789ece24decca20e20115f))
 
 
 ### Features

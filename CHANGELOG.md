@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.2.0...v1.3.0) (2022-02-05)
+
+
+### Features
+
+* **s-agathae:** remove introduction and add \cleardoublepage. ([9b4b59c](https://github.com/2e0byo/StcuthbertsMasses/commit/9b4b59c7a6a02f8d488e47707f4b29b1af898143))
+
 # [1.2.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.1.0...v1.2.0) (2022-02-04)
 
 

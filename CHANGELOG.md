@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.3.0...v1.4.0) (2022-05-06)
+
+
+### Features
+
+* better template. ([5c9b9ea](https://github.com/2e0byo/StcuthbertsMasses/commit/5c9b9eadcbbf1aaaf69839e95e722f5e42c9ba0d))
+* st. Stanislaus. ([a4ac89a](https://github.com/2e0byo/StcuthbertsMasses/commit/a4ac89a0140dbb9f3e595096bd2c79330c1e7a67))
+
 # [1.3.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.2.0...v1.3.0) (2022-02-05)
 
 

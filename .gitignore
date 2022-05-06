@@ -3,3 +3,5 @@
 *.gtex
 *log
 *.el
+*.out
+*.pdf-view-restore

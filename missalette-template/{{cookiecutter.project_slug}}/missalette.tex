@@ -1,4 +1,4 @@
-% {% raw %}
+% 
 \documentclass[a5paper,openany,10pt]{memoir}
 % Packages
 \usepackage[nobottomtitles]{titlesec}
@@ -177,95 +177,95 @@
 
 \section{Introit}
 \red{When the celebrant reaches the altar:}
-\gregorioscore{intr}
+\gregorioscore{intr.gtex}
 \onecolumntranslation{\introittranslation}
 
 \section{Kyrie}
 \red{Immediately after the Introit:}
-\gregorioscore{kyrie}
+\gregorioscore{kyrie.gtex}
 
 \section{Gloria}
 \red{Immediately after the Kyrie:}
-\gregorioscore{gloria}
+\gregorioscore{gloria.gtex}
 
 \section{Collect}
-\gregorioscore{dominus_vobiscum}
+\gregorioscore{dominus_vobiscum.gtex}
 \black{\collect}
-\gregorioscore{amen}
+\gregorioscore{amen.gtex}
 
 \section{Lesson}
 \red{The server chants the lesson:}
-\gregorioscore{lesson}
+\gregorioscore{lesson.gtex}
 \threecolumntranslation{\lessontranslation}
 
 \section{Responsory}
 \red{After the Chanting of the Epistle, or during the (secret) reading if
 so appointed:}
-\gregorioscore{grad}
-\gregorioscore{alleluia}
-\onecolumntranslation{\responsory}
+\gregorioscore{grad.gtex}
+\gregorioscore{alleluia.gtex}
+\onecolumntranslation{\responsorytranslation}
 
 \section{Gospel}
 \red{The choir sings the responses at the Holy Gospel:}
-\gregorioscore{dominus_vobiscum}
-\gregorioscore{sequenti}
+\gregorioscore{dominus_vobiscum.gtex}
+\gregorioscore{sequenti.gtex}
 \black{\gospel}
 
 \section{Response prior to the Offertory}
 \red{Just before the chanting of the Offertory:}
-\gregorioscore{dominus_vobiscum}
+\gregorioscore{dominus_vobiscum.gtex}
 
 \section{Offertory}
 \red{Immediately after the Celebrant chants the previous “Oremus”:}
-\gregorioscore{offert}
+\gregorioscore{offert.gtex}
 \onecolumntranslation{\offertorytranslation}
 
 \red{A motet or hymn may be sung here.}
 
 \section{Responses at the Preface}
-\gregorioscore{pref}
+\gregorioscore{pref.gtex}
 
 \section{Sanctus and Benedictus}
 \red{Immediately after the Celebrant concludes the chanting of the Preface:}
-\gregorioscore{sanctus}
+\gregorioscore{sanctus.gtex}
 
 \section{Amen at the end of the Canon of the Mass}
-\gregorioscore{amen}
+\gregorioscore{amen.gtex}
 
 \section{Pater Noster}
 \red{The Celebrant alone chants the “Pater Noster.” The Choir sings the conclusion:}
-\gregorioscore{sed}
+\gregorioscore{sed.gtex}
 
 \section{Breaking of the Host}
-\gregorioscore{amen}
-\gregorioscore{dominus_vobiscum}
+\gregorioscore{amen.gtex}
+\gregorioscore{dominus_vobiscum.gtex}
 
 
 \section{Agnus Dei}
 \red{After the proceeding ``Et cum spiritu tuo:''}
-\gregorioscore{amen}
-\gregorioscore{pax_domini}
-\gregorioscore{agnus}
+\gregorioscore{amen.gtex}
+\gregorioscore{pax_domini.gtex}
+\gregorioscore{agnus.gtex}
 
 \subsubsection{Communion}
 \red{Once the Celebrant begins to distribute Holy Communion:}
-\gregorioscore{communio}
+\gregorioscore{communio.gtex}
 \onecolumntranslation{\communiontranslation}
 \red{A motet or hymn may be sung here.}
 
 \subsubsection{Post-Communion Collect}
-\gregorioscore{dominus_vobiscum}
+\gregorioscore{dominus_vobiscum.gtex}
 \black{\postcommunion}
-\gregorioscore{amen}
+\gregorioscore{amen.gtex}
 
 \subsubsection{Dismissal}
-\gregorioscore{dominus_vobiscum}
-\gregorioscore{ite}
+\gregorioscore{dominus_vobiscum.gtex}
+\gregorioscore{ite.gtex}
 
 \ifdefempty{\marian}{}{%
 \section{Marian Antiphon}
 \red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
-\gregorioscore{marian}
+\gregorioscore{marian.gtex}
 \red{A motet or hymn may follow.}
 }
 \begin{center}
@@ -274,9 +274,9 @@ so appointed:}
 
 
 \vfill
-% {% endraw %}
-Typeset by {{-cookiecutter.creator_name-}} in ten-point Palatino.  Translations from the
-Knox Bible, divinumofficium.com and my own.
+% 
+Typeset byJohn Morrisin ten-point Palatino.  Translations from the
+Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
 
 The latest version of this booklet can always be found at
 \url{https://github.com/2e0byo/StCuthbertsMasses}. Comments?

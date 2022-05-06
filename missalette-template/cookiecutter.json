@@ -3,5 +3,5 @@
   "project_slug": "{{ cookiecutter.feast_name | slugify }}",
   "creator_name": "",
     "_extensions": ["cookiecutter.extensions.SlugifyExtension"],
-    "_copy_without_render": ["*.sty"]
+    "_copy_without_render": ["*.sty", "*.gabc"]
 }

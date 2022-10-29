@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.6.0...v1.6.1) (2022-10-29)
+
+
+### Bug Fixes
+
+* add marian. ([9f86445](https://github.com/2e0byo/StcuthbertsMasses/commit/9f864456d3ebb7c0c023d4d08bc86c31949e4fa7))
+
 # [1.6.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.5.0...v1.6.0) (2022-10-29)
 
 

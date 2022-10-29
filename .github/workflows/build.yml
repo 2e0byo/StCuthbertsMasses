@@ -7,8 +7,8 @@ on:
 name: Build and upload artifact
 
 jobs:
-  timeout-minutes: 20
   build_latex:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

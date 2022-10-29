@@ -5,7 +5,7 @@ all: gabc missalette.pdf missalette-booklet.pdf
 %.gtex: %.gabc
 	gregorio $<
 
-gabc: intr.gtex grad.gtex alleluia.gtex offert.gtex communio.gtex kyrie.gtex gloria.gtex dominus_vobiscum.gtex amen.gtex sequenti.gtex pref.gtex sanctus.gtex sed.gtex pax_domini.gtex ite.gtex agnus.gtex marian.gabc
+gabc: intr.gtex grad.gtex alleluia.gtex offert.gtex communio.gtex kyrie.gtex gloria.gtex dominus_vobiscum.gtex amen.gtex sequenti.gtex pref.gtex sanctus.gtex sed.gtex pax_domini.gtex ite.gtex agnus.gtex marian.gtex
 
 
 missalette.pdf: missalette.tex propers.tex gabc

@@ -1,0 +1,76 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Sancta Mariæ Sabbato}
+% 
+\newcommand{\masstype}{Missa Cantata}
+
+\newcommand{\introittranslation}{Hail, holy Mother, who in childbirth brought
+  forth the King Who rules heaven and earth world without end.  My heart
+  overflows with a goodly theme; as I sing my ode to the King.}
+
+\newcommand{\collect}{%
+  \l{Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et
+    córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis
+    intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.}
+
+  \e{Grant us, Your servants, O Lord God, we beseech You, to enjoy lasting
+    health of mind and body; and by the intercession of glorious and blessed
+    Mary, ever Virgin, may we be delivered from present sorrow and partake to
+    the full of eternal happiness.}
+
+  \l{Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat
+    in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.}
+
+  \e{Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee,
+    in the unity of the Holy Ghost, God, world without end.}
+}
+\newcommand{\responsorytranslation}{
+Blessed and venerable art thou, O Virgin Mary,
+  who, with nought to shame thee, were found to be Mother of the
+  Saviour. O Virgin, Mother of God, He whom the whole world containeth not
+  closed Himself in thy womb to become man.  Alleluia, alleluia.  Virgin thou
+  remainest after thou hadst given birth: O mother of God, intercede for us.  Alleluia.}
+
+\newcommand{\gospel}{%
+  \l{In illo témpore: Loquénte Iesu ad turbas, extóllens vocem quædam múlier de
+    turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At
+    ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.}
+  \e{At that time, as Jesus was speaking to the multitudes, a certain woman from
+    the crowd lifted up her voice and said to Him, Blessed is the womb that bore
+    You, and the breasts that nursed You. But He said, Rather, blessed are they
+    who hear the word of God and keep it.}  }
+
+\newcommand{\offertorytranslation}{Hail, Mary, full of grace, the Lord is with
+  thee. Blessed art thou among women and blessed is the fruit of thy womb.}
+
+\newcommand{\communiontranslation}{Blessed is the womb of the Virgin Mary, which
+  bore the Son of the eternal Father.}  \newcommand{\postcommunion}{%
+  \l{Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper
+    Vírginis patrocíniis nos ubíque prótegi; in cuius veneratióne hæc tuæ
+    obtúlimus maiestáti.}
+
+  \e{Having received the aids conducive to our salvation, O Lord, we beseech
+    You, grant that we may everywhere be protected by the patronage of blessed
+    Mary, ever virgin, in veneration of whom we have made these offerings to
+    Your Majesty.}
+
+  \l{Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat
+    in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.}
+
+  \e{Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee,
+    in the unity of the Holy Ghost, God, world without end.}
+}
+
+\newcommand{\marian}{true} % set to blank to suppress
+% 
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

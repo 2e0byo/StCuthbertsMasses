@@ -1,0 +1,295 @@
+% 
+\documentclass[a5paper,openany,10pt]{memoir}
+% Packages
+\usepackage[nobottomtitles]{titlesec}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella} %palatino clone
+\usepackage[yyyymmdd,hhmmss]{datetime}
+% \usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{lettrine}
+\usepackage[british, latin]{babel}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{scalerel}
+\usepackage{verse,anyfontsize}
+\usepackage{stackengine}
+\usepackage[hidelinks, final]{hyperref}
+\usepackage{multicol}
+\usepackage{afterpage}
+\usepackage[]{gitinfo2}
+% local
+\usepackage{rubrics}
+\usepackage{styling}
+% Config
+\pagestyle{giplain}
+\thispagestyle{empty}
+% =========
+% layout
+\setulmarginsandblock{0.5in}{0.7in}{*}
+\setlrmarginsandblock{0.5in}{0.5in}{*}
+\checkandfixthelayout
+% headers
+\setsecnumdepth{chapter}
+\setsecheadstyle{\LARGE\raggedright\centering}
+\setsubsecheadstyle{\Large\scshape\raggedright\centering}
+\setsubsubsecheadstyle{\color{red}\large\scshape\raggedright\centering}
+\setparaheadstyle{\color{red}\large\raggedright\centering}
+\setafterparaskip{1.5ex plus .2ex}
+% multicols
+\renewcommand{\columnseprulecolor}{\color{red}}
+\setlength{\multicolsep}{0em}
+\setlength{\columnseprule}{0.4pt}
+\colseprulecolor{red}
+% page
+\openany
+\input{propers}
+
+\makeatletter
+\newcommand{\oneraggedpage}{\let\mytextbottom\@textbottom
+  \let\mytexttop\@texttop
+  \raggedbottom
+  \afterpage{%
+    \global\let\@textbottom\mytextbottom
+    \global\let\@texttop\mytexttop}}
+\makeatother
+\renewcommand{\X}{\textcolor{red}{\grecross}}
+\renewcommand{\r}{\textcolor{red}{\gothRbar.}}
+\renewcommand{\v}{\textcolor{red}{\gothVbar.}}
+
+% \renewcommand{\red}[2][\centering]{%do the red....
+%   % call with empty optional argument for justified text; or
+%   % \raggedright.]
+%   % \filbreak
+% {\textcolor{red}{\noindent#2}#1}\par\nopagebreak\medskip\nopagebreak}
+
+
+\newcommand{\ps}[2][]{%typeset `psalmus'
+  \paragraph{Psalmus #2#1}}
+
+
+% \medskip\nopagebreak
+% {\textcolor{red}{\noindent Psalmus #2#1}\centering\par\nopagebreak\vspace{-0.5\baselineskip}\nopagebreak} }
+
+
+\newcommand{\dropcap}[2]{%
+  \lettrine{\textcolor{red}{#1}}{#2}}
+
+\renewcommand{\red}[2][\centering]{%do the red....
+  % call with empty optional argument for justified text; or
+  % \raggedright.]
+  % \filbreak
+  {\noindent\textcolor{red}{\itshape#2}#1\par\nopagebreak\medskip\nopagebreak}\nopagebreak}
+
+
+\newcommand{\black}[2][0.5]{%say the black...
+  \columnratio{#1}
+  \begin{paracol}{2}
+    \setlength{\parindent}{0em}
+    \setlength{\parskip}{0.2\baselineskip}
+    #2
+  \end{paracol}
+  \medskip
+}
+
+\renewcommand{\X}{\textcolor{red}{\grecross}}
+
+\renewcommand{\l}[2][]{\selectlanguage{latin}
+  \ifthenelse{\equal{s}{#1}}%
+  {\emph{S.}~}%
+  {}%
+  \ifthenelse{\equal{m}{#1}}%
+  {\emph{M.}~}%
+  {}%
+  #2\par\selectlanguage{british}\switchcolumn}
+\newcommand{\e}[2][]{%
+  \ifthenelse{\equal{s}{#1}}%
+  {\emph{P.}~}%
+  {}%
+  \ifthenelse{\equal{m}{#1}}%
+  {\emph{S.}~}%
+  {}%
+  #2\par\switchcolumn*}
+\renewcommand{\S}{\emph{S.}~}
+\newcommand{\M}{\emph{M.}~}
+\newcommand{\amen}{\l{Amen.}\e{Amen.}}
+\newcommand{\dominusvobiscum}{%
+  \l[s]{Dóminus vobíscum.}
+  \e[s]{The Lord be with you.}
+  \l[m]{Et cum spíritu tuo.}
+  \e[m]{And with thy spirit.}}
+\newcommand{\oremus}{
+  \l{Orémus.}
+  \e{Let us pray.}
+}
+\newcommand{\domineexaudi}{
+  \l{\v~Dómine, exáudi oratiónem meam.}
+  \e{\v~O Lord, hear my prayer.}
+  \l{\r~Et clamor meus ad te véniat.}
+  \e{\r~And let my cry come unto thee.}
+}
+\newcommand{\deogratias}{
+  \l{\r~Deo grátias.}
+  \e{\r~Thanks be to God.}
+}
+\newcommand{\onecolumntranslation}[1]{%
+  {\small #1}}
+
+\newcommand{\threecolumntranslation}[1]{%
+  \begin{multicols}{3}
+    \small
+    #1
+  \end{multicols}}
+
+
+% modified from https://tex.stackexchange.com/questions/163334/using-lettrine-or-equivalent-inside-verse-environment
+
+\def\startverse#1\\#2\\{%
+  \begin{minipage}{4in}%
+    \firstline#1\relax%
+    \def\verselineB{#2}%
+    \if Q\versalletter\def\descstrut{\strut}\else\def\descstrut{}\fi%
+    \def\Versal{\textcolor{red}{%
+        \scalerel*{$\fontsize{28}{30}\selectfont\versalletter$}%
+        {\def\stacktype{L}\stackon{T\descstrut}{T}}}}%
+    \setbox0=\hbox{\Versal\,}%
+    \def\leftoffset{-.5\wd0}%
+    \hspace*{\wd0}\hspace{\leftoffset}%
+    \verselineA\\%
+    \hspace*{\wd0}\hspace{\leftoffset}%
+    \llap{\smash{\box0}}%
+    \hspace{0.5em}\verselineB\strut%
+  \end{minipage}\\%
+}
+
+
+\def\firstline#1#2 #3\relax{\def\versalletter{#1}\def\verselineA{\textsc{#2} #3}}
+
+\begin{document}
+\selectlanguage{latin}
+\midsloppy
+
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0em}
+
+% title page
+\TitlePage{Sacra Missa}{\masstype}{\feast}
+
+\section{Introit}
+\red{When the celebrant reaches the altar:}
+\gregorioscore{intr.gtex}
+\onecolumntranslation{\introittranslation}
+
+\section{Kyrie}
+\red{Immediately after the Introit:}
+\gregorioscore{kyrie.gtex}
+
+\section{Gloria}
+\red{Immediately after the Kyrie:}
+\gregorioscore{gloria.gtex}
+
+\section{Collect}
+\gregorioscore{dominus_vobiscum.gtex}
+\black{\collect}
+\gregorioscore{amen.gtex}
+
+% \section{Lesson}
+% \red{The server chants the lesson:}
+% \gregorioscore{lesson.gtex}
+% \threecolumntranslation{\lessontranslation}
+
+\section{Gradual and Alleluia}
+\red{After the Chanting of the Epistle, or during the (secret) reading if
+so appointed:}
+\gregorioscore{grad.gtex}
+\gregorioscore{alleluia.gtex}
+\onecolumntranslation{\responsorytranslation}
+
+\section{Gospel}
+\red{The choir sings the responses at the Holy Gospel:}
+\gregorioscore{dominus_vobiscum.gtex}
+\gregorioscore{sequenti.gtex}
+\black{\gospel}
+
+\section{Response prior to the Offertory}
+\red{Just before the chanting of the Offertory:}
+\gregorioscore{dominus_vobiscum.gtex}
+
+\section{Offertory}
+\red{Immediately after the Celebrant chants the previous “Oremus”:}
+\gregorioscore{offert.gtex}
+\onecolumntranslation{\offertorytranslation}
+
+\red{A motet or hymn may be sung here.}
+
+\section{Responses at the Preface}
+\gregorioscore{pref.gtex}
+
+\section{Sanctus and Benedictus}
+\red{Immediately after the Celebrant concludes the chanting of the Preface:}
+\gregorioscore{sanctus.gtex}
+
+\section{Amen at the end of the Canon of the Mass}
+\gregorioscore{amen.gtex}
+
+\section{Pater Noster}
+\red{The Celebrant alone chants the “Pater Noster.” The Choir sings the conclusion:}
+\gregorioscore{sed.gtex}
+
+\section{Breaking of the Host}
+\gregorioscore{amen.gtex}
+\gregorioscore{dominus_vobiscum.gtex}
+
+
+\section{Agnus Dei}
+\red{After the proceeding ``Et cum spiritu tuo:''}
+\gregorioscore{amen.gtex}
+\gregorioscore{pax_domini.gtex}
+\gregorioscore{agnus.gtex}
+
+\subsubsection{Communion}
+\red{Once the Celebrant begins to distribute Holy Communion:}
+\gregorioscore{communio.gtex}
+\onecolumntranslation{\communiontranslation}
+\red{A motet or hymn may be sung here.}
+
+\subsubsection{Post-Communion Collect}
+\gregorioscore{dominus_vobiscum.gtex}
+\black{\postcommunion}
+\gregorioscore{amen.gtex}
+
+\subsubsection{Dismissal}
+\gregorioscore{dominus_vobiscum.gtex}
+\gregorioscore{ite.gtex}
+
+\ifdefempty{\marian}{}{%
+\section{Marian Antiphon}
+\red{At the conclusion of Mass the Marian antiphon proper to the season is sung:}
+\gregorioscore{marian.gtex}
+\red{A motet or hymn may follow.}
+}
+\begin{center}
+  \+
+\end{center}
+
+
+\vfill
+% 
+Typeset by John Morris in ten-point Palatino.  Translations from the
+Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
+
+% 
+The latest version of this booklet can always be found at
+\url{https://github.com/2e0byo/StCuthbertsMasses}. Comments?
+Suggestion? Found a mistake? Open an issue in the repository.
+
+{\centering\footnotesize\texttt{Compositum \today\ hora \currenttime}\par}
+
+\end{document}
+% 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: lualatex
+%%% End:
+

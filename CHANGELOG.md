@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.4.0...v1.5.0) (2022-10-29)
+
+
+### Bug Fixes
+
+* raw. ([23916f0](https://github.com/2e0byo/StcuthbertsMasses/commit/23916f0ea26fe571fd50d66b2845ad98ed54929f))
+
+
+### Features
+
+* sanctae mariae in sabbato. ([90bd7a9](https://github.com/2e0byo/StcuthbertsMasses/commit/90bd7a9e5d55ed7ca990fee582d3295a54cfc0f9))
+
 # [1.4.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.3.0...v1.4.0) (2022-05-06)
 
 

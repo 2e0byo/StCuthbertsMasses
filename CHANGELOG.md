@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.5.0...v1.6.0) (2022-10-29)
+
+
+### Features
+
+* readme. ([a4c1d7f](https://github.com/2e0byo/StcuthbertsMasses/commit/a4c1d7f64994a139991b7a3a6b0ab01e3c33b737))
+
 # [1.5.0](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.4.0...v1.5.0) (2022-10-29)
 
 

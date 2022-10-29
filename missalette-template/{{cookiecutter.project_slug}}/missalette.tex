@@ -1,4 +1,4 @@
-% 
+% {% raw %}
 \documentclass[a5paper,openany,10pt]{memoir}
 % Packages
 \usepackage[nobottomtitles]{titlesec}
@@ -274,10 +274,12 @@ so appointed:}
 
 
 \vfill
-% 
-Typeset byJohn Morrisin ten-point Palatino.  Translations from the
+% {% endraw %}
+Typeset by \VAR{cookiecutter.feast_name} in ten-point Palatino.  Translations from the
 Knox Bible, divinumofficium.com, the St. Dominic Missal, and my own.
 
+
+% {% raw %}
 The latest version of this booklet can always be found at
 \url{https://github.com/2e0byo/StCuthbertsMasses}. Comments?
 Suggestion? Found a mistake? Open an issue in the repository.
@@ -285,6 +287,7 @@ Suggestion? Found a mistake? Open an issue in the repository.
 {\centering\footnotesize\texttt{Compositum \today\ hora \currenttime}\par}
 
 \end{document}
+% {% endraw %}
 
 %%% Local Variables:
 %%% mode: latex

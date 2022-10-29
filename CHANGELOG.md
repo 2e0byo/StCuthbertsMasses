@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.6.1...v1.6.2) (2022-10-29)
+
+
+### Bug Fixes
+
+* agnus. ([a84c94d](https://github.com/2e0byo/StcuthbertsMasses/commit/a84c94dda6a1a22e3f742c35c1d7ad622e7ebbe5))
+
 ## [1.6.1](https://github.com/2e0byo/StcuthbertsMasses/compare/v1.6.0...v1.6.1) (2022-10-29)
 
 

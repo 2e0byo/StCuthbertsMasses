@@ -5,3 +5,6 @@
 *.el
 *.out
 *.pdf-view-restore
+*.glog
+*.gaux
+*.gtex

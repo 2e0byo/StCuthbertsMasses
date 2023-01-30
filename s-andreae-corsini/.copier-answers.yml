@@ -1,9 +1,10 @@
 # Changes here will be overwritten by Copier
-_commit: v0.0.4-4
+_commit: v0.0.5-1
 _src_path: /home/john/code/RomanRiteTemplate
+alleluia: alleluia
 asperges: false
 creator_name: John Morris
-creed: null
+creed: 1
 creed_path: ../Ordinaries/credo
 feast_name: S. Andreæ Corsini Episcopi et Confessoris
 gloria: true
@@ -12,4 +13,5 @@ marian: true
 mass_setting: 13
 mass_type: Missa Cantata
 masses_path: ../Ordinaries/masses
+preface: standard
 repo_url: https://github.com/2e0byo/StCuthbertsMasses

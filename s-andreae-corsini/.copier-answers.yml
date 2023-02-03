@@ -1,17 +1,17 @@
 # Changes here will be overwritten by Copier
-_commit: v0.0.7
-_src_path: /home/john/code/RomanRiteTemplate
+_commit: 0.0.1
+_src_path: /home/john/code/DominicanRiteTemplate
 alleluia: alleluia
 asperges: false
 creator_name: John Morris
 creed: 1
-creed_path: ../Ordinaries/credo
+creed_path: ../DominicanOrdinaries/credo
 feast_name: S. Andreæ Corsini Episcopi et Confessoris
 gloria: true
 img_file: ../img/logo.png
 marian: true
-mass_setting: 13
+mass_setting: 3
 mass_type: Missa Cantata
-masses_path: ../Ordinaries/masses
+masses_path: ../DominicanOrdinaries/masses
 preface: standard
 repo_url: https://github.com/2e0byo/StCuthbertsMasses

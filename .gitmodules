@@ -1,3 +1,6 @@
 [submodule "Ordinaries"]
 	path = Ordinaries
 	url = https://github.com/St-Josephs-Gateshead/Ordinaries.git
+[submodule "DominicanOrdinaries"]
+	path = DominicanOrdinaries
+	url = https://github.com/2e0byo/DominicanOrdinaries.git

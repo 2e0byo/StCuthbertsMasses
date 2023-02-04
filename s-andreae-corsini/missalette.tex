@@ -25,8 +25,7 @@
 \checkandfixthelayout
 % headers
 \setsecnumdepth{chapter}
-\setsecheadstyle{\LARGE\raggedright\centering}
-\setsubsecheadstyle{\Large\scshape\raggedright\centering}
+\setsecheadstyle{\Large\scshape\raggedright\centering}
 \setsubsubsecheadstyle{\color{red}\large\scshape\raggedright\centering}
 \setparaheadstyle{\color{red}\large\raggedright\centering}
 \setafterparaskip{1.5ex plus .2ex}
@@ -42,10 +41,12 @@
 
 \titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.png}
 
+% 
 \section{Officium}
 \red{When the celebrant reaches the altar:}
 \gregorioscore{office}
 \oneColumnTranslation{\officeTranslation}
+% 
 
 \section{Kyrie}
 \red{Immediately after the Introit:}
@@ -68,12 +69,15 @@
 \red{The lesson is chanted:}
 \black{\lesson}
 
+% 
 \section{Responsory}
 \red{After the Chanting of the lesson, or during the (secret) reading if
-so appointed:}
+  so appointed:}
 \gregorioscore{responsory}
 \gregorioscore{alleluia}
 \oneColumnTranslation{\responsoryTranslation}
+% 
+
 
 \section{Gospel}
 \red{The choir sings the responses at the Holy Gospel:}
@@ -120,19 +124,19 @@ so appointed:}
 \gregorioscore{pax-domini}
 \gregorioscore{\agnusPath}
 
-\subsubsection{Communion}
+\section{Communion}
 \red{Once the Celebrant begins to distribute Holy Communion:}
 \gregorioscore{communion}
 \oneColumnTranslation{\communionTranslation}
 
 \red{A motet or hymn may be sung here.}
 
-\subsubsection{Post-Communion Collect}
+\section{Post-Communion Collect}
 \gregorioscore{dominus-vobiscum}
 \black{\postcommunion}
 \gregorioscore{amen}
 
-\subsubsection{Dismissal}
+\section{Dismissal}
 \gregorioscore{dominus-vobiscum}
 \gregorioscore{\itePath}
 
@@ -166,4 +170,3 @@ Suggestion? Found a mistake? Open an issue in the repository.
 %%% mode: latex
 %%% TeX-engine: luatex
 %%% End:
-

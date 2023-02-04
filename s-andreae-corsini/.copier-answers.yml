@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
-_commit: 0.1.0-1-g3c5f03a
-_src_path: /home/john/code/DominicanRiteTemplate
+_commit: v1.0.0
+_src_path: gh:2e0byo/MassTemplate.git
 alleluia: alleluia
 asperges: false
 creator_name: John Morris
@@ -15,3 +15,4 @@ mass_type: Missa Cantata
 masses_path: ../DominicanOrdinaries/masses
 preface: standard
 repo_url: https://github.com/2e0byo/StCuthbertsMasses
+rite: dominican

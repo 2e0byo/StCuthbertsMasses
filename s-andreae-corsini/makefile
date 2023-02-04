@@ -6,13 +6,13 @@ all: missalette-booklet.pdf pew-sheet-booklet.pdf
 	env openout_any=a latexmk --pdflatex=lualatex --pdf $<
 
 %-booklet.pdf: %.pdf
-	env openout_any=a latexmk --pdflatex=lualatex --pdf $<
+	pdfjam --landscape --suffix booklet --booklet true $<
 
-missalette.pdf: missalette.tex propers.tex gabc
+missalette.pdf: missalette.tex propers.tex styling.sty rubrics.sty titlepage.sty
 
 missalette-booklet.pdf: missalette.pdf
 
-pew-sheet.pdf: pew-sheet.tex
+pew-sheet.pdf: pew-sheet.tex propers.tex styling.sty rubrics.sty
 
 pew-sheet-booklet.pdf: pew-sheet.pdf
 

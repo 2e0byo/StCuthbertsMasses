@@ -1,4 +1,3 @@
-% 
 \documentclass[a5paper,10pt]{memoir}
 % Packages
 \usepackage[nobottomtitles]{titlesec}
@@ -7,13 +6,16 @@
 \usepackage[yyyymmdd,hhmmss]{datetime}
 \usepackage{microtype}
 \usepackage[british, latin]{babel}
-\usepackage[]{gitinfo2}
 % local
 \usepackage{rubrics}
 \usepackage{styling}
 \usepackage{titlepage}
 % Config
-\pagestyle{giplain}
+\copypagestyle{versionplain}{plain}
+\newcommand{\version}{\tiny Release: v1.0.0 (template v1.2.2)}
+\makeevenfoot{versionplain}{\thepage}{}{\version}
+\makeoddfoot{versionplain}{\version}{}{\thepage}
+\pagestyle{versionplain}
 \thispagestyle{empty}
 % =========
 % per-document styling: we don't set this in `styling.sty' as we might want
@@ -35,15 +37,18 @@
 
 \input{propers}
 
-% 
 \begin{document}
 \selectlanguage{latin}
 
 \titlePage{Sacra Missa}{\masstype}{\feast}{../img/logo.png}
 
 % 
+
+% 
 \section{Officium}
+% 
 \red{When the celebrant reaches the altar:}
+% 
 \gregorioscore{office}
 \oneColumnTranslation{\officeTranslation}
 % 
@@ -84,6 +89,8 @@
 \gregorioscore{dominus-vobiscum}
 \gregorioscore{sequenti}
 \black{\gospel}
+
+% 
 
 \section{Response prior to the Offertory}
 \red{Just before the chanting of the Offertory:}
@@ -133,7 +140,10 @@
 
 \section{Post-Communion Collect}
 \gregorioscore{dominus-vobiscum}
-\black{\postcommunion}
+\black{
+  \oremus
+  \postcommunion
+}
 \gregorioscore{amen}
 
 \section{Dismissal}

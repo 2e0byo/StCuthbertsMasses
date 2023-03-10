@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier
+_commit: v1.2.4
+_src_path: gh:2e0byo/MassTemplate
+alleluia: tract
+asperges: false
+creator_name: John Morris
+creed: null
+creed_path: ../Ordinaries/credo
+creedp: false
+feast_name: Sancta Maria in Sabbato Tempore Quadragesimae
+gloria: true
+img_file: ../img/logo.png
+marian: true
+mass_setting: 9
+mass_type: Missa Cantata
+masses_path: ../Ordinaries/masses
+preface: standard
+repo_url: https://github.com/2e0byo/StCuthbertsMasses
+rite: roman
+version: v1.0.0

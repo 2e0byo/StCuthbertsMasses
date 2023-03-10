@@ -1,0 +1,133 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Sancta Maria in Sabbato Tempore Quadragesimae}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+%
+\newcommand{\introit}{%
+  Salve, sancta Parens, eníxa puérpera Regem: qui cœlum terrámque regit in
+  sǽcula sæculórum.
+  \v\ Eructávit cor meum verbum bonum: dico ego ópera mea Regi
+}
+\newcommand{\introitTranslation}{%
+  Hail, holy Mother, who in childbirth brought forth the King Who rules heaven
+  and earth world without end.
+  \v\ My heart overflows with a goodly theme; as I sing my ode to the King.
+}
+%
+\newcommand{\collect}{%
+  \l{%
+    Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis
+    sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a
+    præsénti liberári tristítia, et ætérna pérfrui lætítia.
+  }
+  \e{%
+    Grant us, Your servants, O Lord God, we beseech You, to enjoy lasting health of
+    mind and body; and by the intercession of glorious and blessed Mary, ever Virgin,
+    may we be delivered from present sorrow and partake to the full of eternal
+    happiness.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+    Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+  }
+  \e{%
+    Before all ages, in the beginning, He created me, and through all ages I shall not cease to be. In the holy Tent I ministered before Him, and in Sion I fixed my abode. Thus in the chosen city He has given me rest, in Jerusalem is my domain. I have struck root among the glorious people, in the portion of my God, His heritage, and my abode is in the full assembly of Saints.
+  }
+}
+
+%
+\newcommand{\gradual}{%
+  Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénta es
+  Mater Salvatóris.
+  \v\ Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera
+  factus homo.
+  Gaude, María Virgo, cunctas hǽreses sola interemísti.
+  \v\ Quæ Gabriélis Archángeli dictis credidísti.
+  \v\ Dum Virgo Deum et hóminem genuísti: et post partum, Virgo, invioláta permansísti.
+  \v\ Dei Génetrix, intercéde pro nobis.
+}
+\newcommand{\gradualTranslation}{%
+  Blessed and venerable are you, O Virgin Mary, who, with unsullied virginity,
+  were found to be the Mother of the Saviour.
+  \v\ O Virgin, Mother of God, He Whom the whole world does not contain, becoming
+  man, shut Himself in your womb.
+  Rejoice, O Virgin Mary; alone you have put an end to all heresies.
+  \v\ You who believed the words of the Archangel Gabriel.
+  \v\ Still a virgin, you brought forth God and man; and after childbirth you remained an inviolate virgin.
+  \v\ O Mother of God, intercede for us.
+}
+%
+\newcommand{\gospel}{%
+  \l{%
+    In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba,
+    dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille
+    dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.
+  }
+  \e{%
+    At that time, as Jesus was speaking to the multitudes, a certain woman from the
+    crowd lifted up her voice and said to Him, Blessed is the womb that bore You,
+    and the breasts that nursed You. But He said, Rather, blessed are they who hear
+    the word of God and keep it.
+  }
+}
+\newcommand{\offertory}{%
+  Felix namque es, sacra Virgo María, et omni laude digníssima: quia ex te ortus
+  est sol justítiæ, Christus, Deus noster.
+}
+\newcommand{\offertoryTranslation}{%
+  You are happy, O holy Virgin Mary, and most worthy of all praise; since out of
+  you has risen the sun of justice, Christ our God.
+}
+\newcommand{\secret}{%
+  \l{%
+    Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad
+    perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem.
+  }
+  \e{%
+    Through Your mercy, O Lord, and by the intercession of blessed Mary, ever Virgin,
+    the Mother of Your only-begotten Son, may this offering profit us for prosperity
+    and peace, now and forevermore.
+  }
+}
+\newcommand{\communion}{%
+  Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium.
+}
+\newcommand{\communionTranslation}{%
+  Blessed is the womb of the Virgin Mary, which bore the Son of the eternal
+  Father.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+    Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper
+    Vírginis patrocíniis nos ubíque prótegi; in cujus veneratióne hæc tuæ obtúlimus
+    majestáti.
+  }
+  \e{%
+    Having received the aids conducive to our salvation, O Lord, we beseech You,
+    grant that we may everywhere be protected by the patronage of blessed Mary, ever
+    Virgin, in veneration of whom we have made these offerings to Your Majesty.
+  }
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/9/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/9/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/9/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/9/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/9/ite}
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:

@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier
+_commit: v2.0.0
+_src_path: gh:2e0byo/MassTemplate
+alleluia: tract
+asperges: false
+creator_name: John Morris
+creed: null
+creed_path: ../Ordinaries/credo
+creedp: false
+feast_name: Sabbato post Dominicam Passionis
+gloria: false
+img_file: ../img/logo.png
+marian: true
+mass_setting: 5
+mass_type: Missa Cantata
+masses_path: ../DominicanOrdinaries/masses
+preface: simple
+repo_url: https://github.com/2e0byo/StCuthbertsMasses
+rite: dominican
+version: v1.0.0

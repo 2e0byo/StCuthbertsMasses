@@ -42,10 +42,6 @@ introit.gtex: introit.gabc
 
 GTEX += introit.gtex
 
-gradual.gtex: gradual.gabc
-
-GTEX += gradual.gtex
-
 offertory.gtex: offertory.gabc
 
 GTEX += offertory.gtex
@@ -79,6 +75,7 @@ GTEX += ../Ordinaries/masses/9/ite.gtex
 ../Ordinaries/masses/9/gloria.gtex: ../Ordinaries/masses/9/gloria.gabc
 
 GTEX += ../Ordinaries/masses/9/gloria.gtex
+
 
 
 alleluia.gtex: alleluia.gabc

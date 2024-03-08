@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier
+_commit: v2.3.0
+_src_path: gh:2e0byo/MassTemplate.git
+alleluia: tract
+asperges: ''
+creator_name: John Morris
+creedp: false
+feast_name: Sabbato post Dominicam III Quadragesimæ
+gloria: false
+gradual: true
+img_file: ../img/logo.png
+marian: true
+mass_setting: 6
+mass_type: Missa Cantata
+masses_path: ../DominicanOrdinaries/masses
+preface: simple
+repo_url: https://github.com/2e0byo/StCuthbertsMasses
+rite: dominican
+version: v1.0.0

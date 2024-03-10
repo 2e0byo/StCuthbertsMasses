@@ -79,10 +79,6 @@ GTEX += gradual.gtex
 
 
 
-tract.gtex: tract.gabc
-
-GTEX += tract.gtex
-
 
 marian.gtex: marian.gabc
 

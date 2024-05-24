@@ -1,0 +1,177 @@
+% This file defines the propert to be inserted into missalette.tex  In this way
+% multiple feasts can be typeset very quickly.  missalette.tex should not normally
+% need changing.  Note that this is not the most readable way to insert text
+% into a LaTeX document, but it is the most powerful: the macros defined here
+% are directly excecuted when building the document.
+
+% For the title page
+\newcommand{\feast}{Sabbato Quattuor Temporum Pentecostes}
+\newcommand{\masstype}{ Missa Cantata%
+  % %
+}
+% 
+\newcommand{\introit}{%
+Cáritas Dei diffúsa est in córdibus nostris, allelúia: per inhabitántem Spíritum eius in nobis, allelúia, allelúia.
+Benedic, anima mea, Dómino: et ómnia, quæ intra me sunt, nómini sancto eius.
+}
+\newcommand{\introitTranslation}{%
+The charity of God is poured forth in our hearts, alleluia: by His Spirit dwelling in us, alleluia, alleluia.
+Bless the Lord, O my soul; and, all my being, bless His holy Name.
+}
+% 
+\newcommand{\collect}{%
+  \l{%
+    Méntibus nostris, quǽsumus, Dómine, Spíritum Sanctum benígnus infúnde: cuius et sapiéntia cónditi sumus, et providéntia gubernámur.
+  }
+  \e{%
+Graciously pour into our minds, we beseech You, O Lord, the Holy Spirit, Whose wisdom created us and Whose providence governs us.
+  }
+  \per
+}
+\newcommand{\lesson}{%
+  \l{%
+Hæc dicit Dóminus Deus: Effúndam Spíritum meum super omnem carnem: et prophetábunt fílii vestri et fíliæ vestræ: senes vestri sómnia somniábunt, et iúvenes vestri visiónes vidébunt. Sed et super servos meos et ancíllas in diébus illis effúndam Spíritum meum. Et dabo prodígia in cœlo et in terra, sánguinem et ignem et vapórem fumi. Sol convertétur in ténebras et luna in sánguinem: ántequam véniat dies Dómini magnus ei horríbilis. Et erit: omnis, qui invocáverit nomen Dómini, salvus erit.
+  }
+  \e{%
+Thus says the Lord God: I will pour out My Spirit upon all mankind. Your sons and daughters shall prophesy, your old men shall dream dreams, your young men shall see visions; even upon the servants and the handmaids, in those days, I will pour out My Spirit. And I will work wonders in the heavens and on the earth, blood, fire, and columns of smoke; the sun will be turned to darkness, and the moon to blood, at the coming of the Day of the Lord, the great and terrible day. Then everyone shall be rescued who calls on the name of the Lord.
+  }
+}
+
+% 
+\newcommand{\gradual}{%
+Allelúia.
+Spíritus est, qui vivíficat: caro autem non prodest quidquam.
+}
+\newcommand{\gradualTranslation}{%
+Alleluia.
+It is the Spirit that gives life; but the flesh profits nothing.
+}
+
+\newcommand{\collectTwo}{%
+  \l{%
+Illo nos igne, quǽsumus, Dómine, Spíritus Sanctus inflámmet: quem Dóminus noster Iesus Christus misit in terram, et vóluit veheménter accéndi:
+  }
+  \e{%
+May the Holy Spirit, we beseech You, O Lord, inflame us with that fire which our Lord Jesus Christ cast upon the earth and desired that it be fanned into flame.
+  }
+  \l{Qui tecum vivit et regnat in unitáte eiúsdem Spíritus Sancti Deus per ómnia sǽcula sæculórum.}
+  \e{Who livest and reignest with God the Father, in the unity of the same Holy Spirit, God, world without end.}
+}
+
+\newcommand{\lessonTwo}{%
+  \l{%
+Fratres: Iustificáti ex fide, pacem habeámus ad Deum per Dóminum nostrum Iesum Christum: per quem et habémus accéssum per fidem in grátiam istam, in qua stamus, et gloriámur in spe glóriæ filiórum Dei. Non solum autem, sed et gloriámur in tribulatiónibus: scientes, quod tribulátio patiéntiam operátur, patiéntia autem probatiónem, probátio vero spem, spes autem non confúndit: quia cáritas Dei diffúsa est in córdibus nostris per Spíritum Sanctum, qui datus est nobis.
+  }
+  \e{%
+Brethren: Having been justified by faith, let us have peace with God through our Lord Jesus Christ, through Whom we also have access by faith unto that grace in which we stand, and exult in the hope of the glory of the sons of God. And not only this, but we exult in tribulations also, knowing that tribulation works out endurance, and endurance tried virtue, and tried virtue hope. And hope does not disappoint, because the charity of God is poured forth in our hearts by the Holy Spirit Who has been given to us.
+  }
+}
+
+\newcommand{\alleluia}{%
+Allelúia.
+Veni, Sancte Spíritus, reple tuórum corda fidélium: et tui amóris in eis ignem accénde.
+}
+\newcommand{\alleluiaTranslation}{%
+Alleluia.
+Come, O Holy Spirit, fill the hearts of Your faithful; and kindle in them the fire of Your love.
+}
+
+\newcommand{\sequence}{%
+  \begin{verse}
+Veni, Sancte Spíritus,\\
+et emítte cǽlitus\\
+lucis tuæ rádium.
+
+Veni, pater páuperum;\\
+veni, dator múnerum;\\
+veni, lumen córdium.
+
+Consolátor óptime,\\
+dulcis hospes ánimæ,\\
+dulce refrigérium.
+
+In labóre réquies,\\
+in æstu tempéries,\\
+in fletu solácium.
+
+O lux beatíssima,\\
+reple cordis íntima\\
+tuórum fidélium.
+
+Sine tuo númine\\
+nihil est in hómine,\\
+nihil est innóxium.
+
+Lava quod est sórdidum,\\
+riga quod est áridum,\\
+sana quod est sáucium.
+
+Flecte quod est rígidum,\\
+fove quod est frígidum,\\
+rege quod est dévium.
+
+Da tuis fidélibus,\\
+in te confidéntibus,\\
+sacrum septenárium.
+
+Da virtútis méritum,\\
+da salútis éxitum,\\
+da perénne gáudium.\\
+Amen. Allelúia.
+  \end{verse}
+}
+% 
+\newcommand{\gospel}{%
+  \l{%
+In illo témpore: Surgens Iesus de synagóga, introívit in domum Simónis. Socrus autem Simónis tenebátur magnis fébribus: et rogavérunt illum pro ea. Et stans super illam, imperávit febri: et dimísit illam. Et contínuo surgens, ministrábat illis. Cum autem sol occidísset, omnes qui habébant infírmos váriis languóribus, ducébant illos ad eum. At ille síngulis manus impónens, curábat eos. Exíbant autem dæmónia a multis clamántia et dicéntia: Quia tu es Fílius Dei: et íncrepans non sinébat ea loqui, quia sciébant ipsum esse Christum. Facta autem die egréssus ibat in desértum locum, et turbæ requirébant eum, et venérunt usque ad ipsum: et detinébant illum, ne discéderet ab eis. Quibus ille ait: Quia et áliis civitátibus opórtet me evangelizáre regnum Dei: quia ídeo missus sum. Et erat prǽdicans in synagógis Galilǽæ.
+  }
+  \e{%
+At that time, Jesus rose from the synagogue and entered Simon’s house. Now Simon’s mother-in-law was suffering from a great fever, and they besought Him for her. And standing over her He rebuked the fever, and it left her; and she rose at once and began to wait on them. Now when the sun was setting, all who had persons sick with various diseases brought them to Him. And He laid His hands upon each of them and cured them. And devils also came forth from many, crying out and saying, You are the Son of God. And He rebuked them, and did not permit them to speak, because they know that He was the Christ. Now when it was day, He went out and departed into a desert place. And the crowds were seeking after Him, and they came to Him, and tried to detain Him, that he might not depart from them. But He said to them, To the other towns also I must proclaim the kingdom of God, for this is why I have been sent. And He was preaching in the synagogues of Galilee.
+  }
+}
+\newcommand{\offertory}{%
+Dómine, Deus salútis meæ, in die clamávi et nocte coram te: intret orátio mea in conspéctu tuo, Dómine, allelúia.
+}
+\newcommand{\offertoryTranslation}{%
+O Lord, the God of my salvation, by day I cry out, at night I clamor in Your presence. Let my prayer come before You, O Lord, alleluia.
+}
+\newcommand{\secret}{%
+  \l{%
+Ut accépta tibi sint, Dómine, nostra ieiúnia: præsta nobis, quǽsumus; huius múnere sacraménti purificátum tibi pectus offérre.
+  }
+  \e{%
+Grant us, we beseech You, O Lord, that we may offer You a heart cleansed by this sacred rite so that our fast may be acceptable to You.
+  }
+  \per
+}
+\newcommand{\communion}{%
+Spíritus, ubi vult, spirat: et vocem eius audis, allelúia, allelúia: sed nescis, unde véniat aut quo vadat, allelúia, allelúia, allelúia.
+}
+\newcommand{\communionTranslation}{%
+  The Spirit breaths where He will, and you hear His voice, alleluia, alleluia; but do not know whence He comes or where He goes, alleluia, alleluia, alleluia.
+}
+\newcommand{\postcommunion}{%
+  \l{%
+Prǽbeant nobis, Dómine, divínum tua sancta fervórem: quo eórum páriter et actu delectémur et fructu.
+  }
+  \e{%
+    May Your holy things, O Lord, fill us with divine eagerness to enjoy their celebration together with their effects.
+  }
+  \per
+}
+
+% File paths: we don't use symlinks as (a) not all platforms support them, and
+% (b) they don't fit nicely with the flow we're using.
+
+\newcommand{\kyriePath}{../Ordinaries/masses/11/kyrie}
+\newcommand{\gloriaPath}{../Ordinaries/masses/11/gloria}
+\newcommand{\sanctusPath}{../Ordinaries/masses/11/sanctus}
+\newcommand{\agnusPath}{../Ordinaries/masses/11/agnus}
+\newcommand{\itePath}{../Ordinaries/masses/11/ite}
+% 
+\newcommand{\creedPath}{../Ordinaries/credo/1/credo}
+% 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "missalette"
+%%% End:
